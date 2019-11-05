@@ -6,6 +6,7 @@ public void settings() {
 
 void draw(){
   background((mouseY/(width/num1)), (mouseX/(width/num2)), (((mouseX+mouseY)/2)/(width/num3)));
+  print("_RGB:" + "(" + round((mouseY/(width/num1))) + "," + round((mouseX/(width/num2))) + "," + round((((mouseX+mouseY)/2)/(width/num3))) +")");
 }
 
 void mousePressed(){
