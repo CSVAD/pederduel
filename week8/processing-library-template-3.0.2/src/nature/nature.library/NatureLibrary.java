@@ -14,7 +14,7 @@ import processing.core.*;
  * @example Hello 
  */
 
-public class HelloLibrary {
+public class NatureLibrary {
 	
 	// myParent is a reference to the parent sketch
 	PApplet myParent;
@@ -31,7 +31,7 @@ public class HelloLibrary {
 	 * @example Hello
 	 * @param theParent
 	 */
-	public HelloLibrary(PApplet theParent) {
+	public NatureLibrary(PApplet theParent) {
 		myParent = theParent;
 		welcome();
 	}
