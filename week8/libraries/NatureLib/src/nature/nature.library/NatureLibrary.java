@@ -1,17 +1,7 @@
-package template.library;
+package nature.library;
 
-/*
-import java.util.ArrayList;
-
-import template.library.NColor;
-import template.library.NObj;
-import template.library.NShape;
-import processing.core.PApplet;
-import processing.core.*;*/
 
 import processing.core.*;
-
-import java.util.ArrayList;
 
 /**
  * This is a template class and can be used to start a new processing Library.
@@ -28,16 +18,10 @@ public class NatureLibrary {
 	
 	// myParent is a reference to the parent sketch
 	PApplet myParent;
-	ArrayList<NObj> objects;
-	NColor fillColor;
-	NColor strokeColor;
-	float strokeWeight;
-	boolean noFill = true;
-	boolean noStroke = false;
 
 	int myVariable = 0;
 	
-	public final static String VERSION = "##library.prettyVersion##";
+	public final static String VERSION = "1.0.0";
 	
 
 	/**
@@ -49,41 +33,16 @@ public class NatureLibrary {
 	 */
 	public NatureLibrary(PApplet theParent) {
 		myParent = theParent;
-		objects = new ArrayList<NObj>();
-		strokeColor = new NColor(0,0,0);
-		fillColor = new NColor(255,255,255);
-		strokeWeight = 1;
 		welcome();
 	}
 	
 	
 	private void welcome() {
-		System.out.println("##library.name## ##library.prettyVersion## by ##author##");
+		System.out.println("Nature Library 1.0.0 by Peder Dueled http://yoururl.com");
 	}
 	
 	
-	public void tiger(float weight){
-		this.strokeWeight = weight;
-		noStroke = false;
-		System.out.println("weight: " + weight);
-		if(myParent.mouseX % 5 == 0 || myParent.mouseX % 2 == 0){
-			strokeColor = new NColor(50,50,50);
-			System.out.println("dark: " + myParent.mouseX);
-		}
-		else{
-			strokeColor = new NColor(255,255,255);
-			System.out.println("light: " + strokeColor);
-		}
-	}
-	
-	public NShape addShape(){
-		NShape nShape = new NShape(this.myParent,strokeColor,strokeWeight,noFill,noStroke);
-		this.objects.add(nShape);
-		return nShape;
-	}
-	
-	
-	public String say() {
+	public String sayHello() {
 		return "hello nature-library.";
 	}
 	/**
