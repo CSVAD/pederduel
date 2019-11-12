@@ -1,0 +1,3 @@
+The library is intended to make it easier to draw with patterns found in nature.
+The methods exposed are meant to be easily recognizable patterns found in well known animals and plants (like a tiger pattern for instance).
+Function addTiger, class Tiger, takes strokeWeight as only argument.
