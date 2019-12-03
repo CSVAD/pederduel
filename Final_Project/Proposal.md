@@ -4,6 +4,14 @@ themes. User can choose between many ways of capturing
 an image or recording a video. One such way might
 be to take a picture every time the webcam detects a smile.
 
+To make this tool different from other photo boothes I want to explore generative art in combination with live motion detection.
+This includes Perlin noise particles, Gaussian noise, random jitter and so on. The user will have the oppurtunity to manipulate
+these factors in real time while using the tool. Changing the silhouette to some intensity of random jitter, making a trail of
+Perlin noise agents when the object in motion moves etc.
+
+When I talked about "templates" I simply meant that the user could press a button to make the parameters either randomly generated
+or be set to specific values which the user can use as a starting point for further exploration.
+
 I want to integrate ControlP5 so the user can change the parameters
 however they like in real time. This includes background, borders,
 alpha, capture method, agents (behaviour, color, number, style) and 
