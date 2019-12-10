@@ -26,10 +26,10 @@ parameter adjustment. Using gestures to capture images/videos will also be
 challenging. 
 
 
-Video links:
-https://youtu.be/q_TIlVgabWc
-https://youtu.be/wtHffYbZW8k
-https://youtu.be/gpm49YtcXn4
-https://youtu.be/EZq14togT3Q
-https://youtu.be/i5E_O16Rpug
+Video links: <br />
+https://youtu.be/q_TIlVgabWc <br />
+https://youtu.be/wtHffYbZW8k <br />
+https://youtu.be/gpm49YtcXn4 <br />
+https://youtu.be/EZq14togT3Q <br />
+https://youtu.be/i5E_O16Rpug <br />
 https://youtu.be/Z1eorIXz3ZM
