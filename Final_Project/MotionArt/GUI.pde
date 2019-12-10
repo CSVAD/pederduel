@@ -13,7 +13,6 @@ void setupGUI(){
   ControlGroup ctrl = controlP5.addGroup("menu",15,25,35);
   ctrl.setColorLabel(color(255));
   ctrl.close();
-  //ctrl.setOpen(false);
 
   ControlGroup agentCtrl = controlP5.addGroup("agents",100,25,45);
   agentCtrl.setColorLabel(color(255));
@@ -67,10 +66,7 @@ void setupGUI(){
   
   toggleMethod[mtd++] = controlP5.addToggle("Picture_Mode").setValue(false).setPosition(left,top+posYmethod+0);
   posYmethod += 35;
-  
-  //agentSliders[asi++] = controlP5.addSlider("Test",1,10,left,top+posY+0,len,15);
-  //posY += 35;
-  
+
   agentSliders[asi++] = controlP5.addSlider("agentsCount",0,10000,left,top+posYagent+0,len,15);
   posYagent += 35;
   
@@ -85,8 +81,6 @@ void setupGUI(){
   
   sliderSound[ssnd++] = controlP5.addSlider("Sound_Sens",1,10,left,top+posYsound+0,len,15);
   posYsound += 35;
-  //agentSliders[asi++] = controlP5.addSlider("angle",1,10,left,top+posYagent+0,len,15);
-  //posYagent += 35;
 
   for (int i = 0; i < tgl; i++) {
     toggles[i].setGroup(ctrl);
@@ -148,19 +142,6 @@ void setupGUI(){
     toggleMethod[i].getCaptionLabel().getStyle().marginRight = -14;
   }
 }
-
-/*void mousePressed(){
-  println(ctrl.isOpen(), agentCtrl.isOpen());
-  /*if(ctrl.isOpen()){
-    println("Ctrl open");
-    agentCtrl.close();
-    agentCtrl.setOpen(false);
-  }else if(agentCtrl.isOpen()){
-    println("Agent ctrl open");
-    ctrl.close();
-    ctrl.setOpen(false);
-  }
-}*/
 
 void drawGUI(){
   controlP5.show();
